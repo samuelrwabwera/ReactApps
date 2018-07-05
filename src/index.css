@@ -105,6 +105,11 @@ border-radius: 100;
 cursor: pointer;
 align-self: auto;
 margin-left: 0%;
+margin-top: -16px;
+margin-bottom: 25px;
+margin-right: 500px;
+
+
 }
 
 .sub button:hover {
@@ -117,6 +122,9 @@ background:#4C9595;
   width: 50%;
   float: left;
   background-color: #D0CAF9;
+  margin-bottom: 10px;
+  
+  
 
 }
 
@@ -125,6 +133,7 @@ background:#4C9595;
   border-radius: 5px;
   width: 50%;
   float: left;
+  margin-bottom: 10px;
 
 }
 
@@ -133,6 +142,9 @@ background:#4C9595;
   border-radius: 5px;
   width: 50%;
   float: left;
+  margin-bottom: 15px;
+  
+  
 
 }
 
@@ -141,6 +153,9 @@ background:#4C9595;
   border-radius: 5px;
   width: 50%;
   float: left;
+  margin-bottom: 25px;
+  
+  
 }
 
 .myForm {
@@ -148,8 +163,11 @@ background:#4C9595;
   margin-right:60%;
   width: 70%;
   border: border-color#E081AE width 100%;
+ 
+  
 }
 
 .formHead {
   border-radius: 50%
+
 }
