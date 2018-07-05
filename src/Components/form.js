@@ -1,32 +1,21 @@
-import React from 'react';
+import React, { createElement } from 'react';
 export class Form extends React.Component {
     render() {
         return (
-            <div id="form" className="myForm">
-                <center>
-                <form>
-                    <input id="tas" type="text" placeholder="Task" required />
-                    <br></br>
-                    <br></br>
-                    <br></br>
+            createElement('div', { className: 'myForm' },
+                createElement('center', null,
+                    createElement('form', null,
 
-                    <input id="des" type="text" placeholder="Description" required />
-                    <br></br>
-                    <br></br>
-                    <br></br>
+                        createElement('input', { id: "tas", placeholder: "Task", required: true }, ),
+                        createElement('input', { id: "des", placeholder: "Description", required: true }, ),
+                        createElement('input', { id: "tt", placeholder: "Time", required: true }, ),
+                        createElement('center', null,
+                            createElement('button', { id: "box", className: "sub" }, "Submit")
+                        )
+                    )
 
-                    <input id="tt" type="time" placeholder="Time" required />
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <center>
-                        <button id="box" className="sub">Submit</button>
-                        
-
-                    </center>
-                </form>
-                </center>
-            </div>
-        );
+                )
+            )
+        )
     }
 }
