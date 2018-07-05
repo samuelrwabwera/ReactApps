@@ -1,13 +1,70 @@
 import React from 'react';
+
+
 export class Button extends React.Component {
     render() {
         return (
-            <div id="myButtons" class="heads">
-                <button className="btn"><i className="fa fa-home"></i> Home</button>
-                <button id="menu" className="btn"><i className="fa fa-bars"></i> Menu</button>
-                
-            </div>
-        );
+            React.createElement('div', { id: "myButtons", className: "heads" },
+                React.createElement('button', { className: "btn fa fa-home" }, "Home"),
+                React.createElement('button', { id: "menu", className: "btn fa fa-bars" }, "Menu")
 
+
+            )
+        )
     }
-}
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
