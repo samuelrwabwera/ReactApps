@@ -7,26 +7,29 @@ import './index.css';
 class MyApp extends React.Component {
     render() {
         return (
-            createElement('div', null,
+            createElement('div', {},
                 createElement('div', { id: "myDiv", className: "header" },
-                    createElement('hi', { className: "Title" }, "My TODO App"),
+                    createElement('h1', { className: "Title" }, "My TODO App"),
                 ),
-                <Button />,
+                createElement(Button, {}),
                 createElement('div', {},
                     createElement('center', {},
-                        createElement('p', {},
-                            createElement('h2', { className: "formHead" }, "New task"),
-                        )
+                        createElement('label', {},
+                            this.createDiv("formHead", 4340), "New Task"
                     )
-                ),
-                createElement('div', {},
-                    <Form />,
                 )
+            ),
+            createElement('div', {},
+                createElement(Form, {}),
             )
+           )
         )
+    }
+        createDiv(className, ref) {
+        return createElement("h2", { className, ref });
     }
 }
 ReactDOM.render(
-    createElement(MyApp, null, null),
+    createElement(MyApp),
     document.getElementById('root')
 );

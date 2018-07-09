@@ -6,11 +6,11 @@ export class Form extends React.Component {
                 createElement('center', null,
                     createElement('form', null,
 
-                        createElement('input', { id: "tas", placeholder: "Task", required: true }, ),
-                        createElement('input', { id: "des", placeholder: "Description", required: true }, ),
-                        createElement('input', { id: "tt", placeholder: "Time", required: true }, ),
-                        createElement('center', null,
-                            createElement('button', { id: "box", className: "sub" }, "Submit")
+        createElement('input', { id: "tas", placeholder: "Task", required: true }, ),
+        createElement('input', { id: "des", placeholder: "Description", required: true }, ),
+        createElement('input', { id: "tt",type:"time", placeholder: "Time", required: true }, ),
+        createElement('center', null,
+        createElement('button', { id: "box", className: "sub" }, "Submit")
                         )
                     )
 
